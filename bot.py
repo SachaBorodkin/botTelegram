@@ -5,9 +5,6 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.types import ChatMemberUpdated
 from aiogram.utils import executor
 
-TOKEN = os.getenv("7685134445:AAHtElPXRlF-EOXDw8fcV681hXTNyUWnDiA")
-CHANNEL_ID = os.getenv("@cringememyukr")
-
 if not TOKEN:
     raise ValueError("❌ Ошибка: Переменная окружения TOKEN не установлена! Проверьте Railway.")
 if not CHANNEL_ID:
