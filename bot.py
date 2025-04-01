@@ -1,6 +1,6 @@
 import os
 import asyncio
-from aiogram import Bot, Dispatcher, types, executor
+from aiogram import Bot, Dispatcher, types
 from aiogram.types import ChatMemberUpdated
 
 # Получаем переменные окружения, настроенные на Railway
@@ -37,8 +37,9 @@ async def on_user_status_change(event: ChatMemberUpdated):
             disable_notification=False
         )
 
+# Запуск бота с polling
 async def main():
-    await dp.start_polling(bot)
+    await dp.start_polling()
 
 if __name__ == "__main__":
     asyncio.run(main())
