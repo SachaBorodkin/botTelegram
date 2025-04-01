@@ -4,7 +4,7 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.types import ChatMemberUpdated
 from aiogram.filters import ChatMemberUpdatedFilter
 
-TOKEN = os.getenv("TOKEN")
+TOKEN = os.getenv("7685134445:AAHtElPXRlF-EOXDw8fcV681hXTNyUWnDiA")
 CHANNEL_ID = os.getenv("@cringememyukr")
 
 bot = Bot(token=TOKEN, parse_mode="Markdown")
