@@ -4,7 +4,8 @@ import asyncio
 from aiogram import Bot, Dispatcher, types
 from aiogram.types import ChatMemberUpdated
 from aiogram.utils import executor
-
+TOKEN = os.getenv("TOKEN")  # Получаем токен из переменных окружения
+CHANNEL_ID = os.getenv("CHANNEL_ID")  # Получаем ID канала
 if not TOKEN:
     raise ValueError("❌ Ошибка: Переменная окружения TOKEN не установлена! Проверьте Railway.")
 if not CHANNEL_ID:
